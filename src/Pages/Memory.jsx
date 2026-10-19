@@ -73,6 +73,8 @@ const Memory = () => {
               <img
                 src={item.img}
                 alt={`Memory ${item.id}`}
+                loading="eager"
+                fetchpriority="high"
                 className="w-full h-full object-cover contrast-[1.05] brightness-95"
               />
             </div>

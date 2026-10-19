@@ -21,6 +21,8 @@ const LoveLetter = () => {
           <img
             className="w-16 h-16 transform rotate-12 skew-x-6 object-contain drop-shadow-[0_10px_10px_rgba(219,39,119,0.5)]"
             src={bow}
+            loading="eager"
+            fetchpriority="high"
             alt="bow letter"
           />
         </div>
@@ -34,6 +36,8 @@ const LoveLetter = () => {
           <img
             src={marquise}
             alt="Marquise"
+            loading="eager"
+            fetchpriority="high"
             className="w-10 max-w-xs mx-auto mb-2"
           />
           <p className="text-xs sm:text-sm text-pink-600 font-mono tracking-wide">

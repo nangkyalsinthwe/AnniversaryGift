@@ -8,7 +8,9 @@ const Header = () => {
         <div className="absolute inset-0 bg-purple-400/70 rounded-full blur-lg" />
         <img
           src={cats}
-          alt="Love Birds"
+          alt="Love Cats"
+          loading="eager"
+          fetchpriority="high"
           className="relative w-28 h-28 object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.4)] transition-transform duration-300"
         />
       </div>
@@ -23,6 +25,8 @@ const Header = () => {
 
       <img
         src={headerImg}
+        loading="eager"
+        fetchpriority="high"
         alt="kokoBaby"
         className="w-80 h-80 mt-4 rounded-full object-cover drop-shadow-[0_0_15px_rgba(168,85,247,0.4)] hover:scale-105 transition-transform duration-300"
       />

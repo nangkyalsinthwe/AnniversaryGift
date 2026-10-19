@@ -52,7 +52,7 @@ const App = () => {
   return (
     <Router>
       <div className="w-full min-h-screen bg-[#1D0B1F] overflow-hidden">
-        <audio ref={audioRef} src={bgMusic} loop />
+        <audio ref={audioRef} src={bgMusic} loop preload="auto" />
 
         {!isAuthenticated ? (
           <PasswordModal onCorrectPassword={handlePasswordSuccess} />
@@ -63,7 +63,6 @@ const App = () => {
             <Route path="/memory" element={<Memory />} />
             <Route path="/loveLetter" element={<LoveLetter />} />
             <Route path="*" element={<Navigate to="/home" replace />} />
-            {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
           </Routes>
         )}
       </div>
